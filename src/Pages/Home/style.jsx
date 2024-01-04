@@ -95,6 +95,11 @@ export const Block = styled.div`
         margin: auto;
         cursor: pointer;
         transform: translateY(-10px);
+        transition: 0.1s;
+        &:active {
+          background: #27331e;
+          transform: translateY(-10px) scale(1.05);
+        }
       }
     }
     .line {
@@ -108,11 +113,19 @@ export const Block = styled.div`
         outline: none;
         border: none;
         font-size: 24px;
+        transition: 0.1s;
         cursor: pointer;
+        &:active {
+          background: #a5a5a5;
+          transform: scale(1.05);
+        }
       }
       button:nth-child(2) {
         background: #435c2b;
         color: #fff;
+        &:active {
+          background: #27331e;
+        }
       }
     }
   }

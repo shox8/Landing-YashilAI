@@ -15,12 +15,16 @@ export const Block = styled.div`
     .card {
       width: 255px;
       margin: 10px 0;
+      transition: 0.2s;
       img {
         border-radius: 25px;
       }
       h1,
       p {
         margin: 15px 0;
+      }
+      &:hover {
+        transform: scale(1.05);
       }
     }
   }

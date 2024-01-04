@@ -60,4 +60,22 @@ export const Anchor = styled.a`
   color: #fff;
   font-size: 20px;
   font-weight: 400;
+  position: relative;
+  &.link::before {
+    content: "";
+    height: 3px;
+    width: 0;
+    background: greenyellow;
+    position: absolute;
+    bottom: 0;
+    border-radius: 3px;
+    transition: .1s;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &.link:active::before {
+    content: "";
+    height: 3px;
+    width: 100%;
+  }
 `;

@@ -38,6 +38,8 @@ export const Block = styled.div`
     height: 100vh;
     left: ${(p) => p.x};
     display: grid;
+    background: #435c2bce;
+    backdrop-filter: blur(20px);
     div {
       display: grid;
       gap: 40px;
